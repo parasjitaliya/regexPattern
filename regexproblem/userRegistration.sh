@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "------------------welcome----------------------"
 read -p "enter first name:" firstName
 if [[ "$firstName" =~ ^[A-Za-Z]{3,}$ ]]
 then
