@@ -26,3 +26,11 @@ else
    echo "Email address $email is invalid."
    echo "plz...enter valid emailid.."
 fi
+read -p "enter user mobile number:" number
+if [[ "$number" =~ ^[+0-9]{2,4}[]?((\([0-9]{3}\) )|([0-9]{3}\-))[0-9]{3}\-[0-9]{4}$ ]]
+then
+   echo "number  $number is valid."
+else
+   echo "number  $number is invalid."
+	echo "enter valid mobile number.."
+fi
